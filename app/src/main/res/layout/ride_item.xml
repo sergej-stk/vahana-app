@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="4dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#ffd700" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:id="@+id/ride_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/fahrt_titel"
+                    android:textColor="#5a3b18"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/ride_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/fahrt_beschreibung"
+                    android:textColor="#555"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_join"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#1a73e8"
+                    android:elevation="2dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/fahrt_beitreten"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
